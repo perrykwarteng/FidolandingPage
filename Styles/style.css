@@ -105,3 +105,22 @@ h3 {
   color: var(--color-accent-two);
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  .link .link-fylo {
+    font-size: 1.5rem;
+  }
+}
+/* Grid component */
+.container {
+  height: 100vh;
+}
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
