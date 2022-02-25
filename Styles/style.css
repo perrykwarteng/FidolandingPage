@@ -32,11 +32,11 @@ h3 {
 /* Buttom component */
 .btn {
   width: 30rem;
-  padding: 2rem 8.5rem;
+  padding: 1.4rem 8.5rem;
   border: 0;
   outline: 0;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 .btn--primary {
@@ -57,23 +57,43 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    padding: 1rem 5rem;
-    font-size: 1.2rem;
+    width: 20rem;
+    padding: 1.2rem 5rem;
+    font-size: 1.5rem;
   }
 }
 /* input component */
 .email-input {
   width: 26rem;
-  height: 5rem;
+  height: 4rem;
   padding: 0 2rem;
   border: 1px solid var(--color-primary-one);
   border-radius: 5px;
   outline: 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: var(--color-primary-one);
 }
+
 ::placeholder {
   color: #999;
 }
+@media screen and (min-width: 768px) {
+  .email-input {
+    font-size: 1.5rem;
+  }
+}
 
-/*  */
+/* Group input-btn */
+.group--input-btn .btn {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .group--input-btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .group--input-btn .btn {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
