@@ -36,7 +36,7 @@ h3 {
   border: 0;
   outline: 0;
   border-radius: 5px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .btn--primary {
@@ -59,7 +59,7 @@ h3 {
   .btn {
     width: 20rem;
     padding: 1.2rem 5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 /* input component */
@@ -70,7 +70,7 @@ h3 {
   border: 1px solid var(--color-primary-one);
   border-radius: 5px;
   outline: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--color-primary-one);
 }
 
@@ -79,7 +79,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .email-input {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -101,7 +101,7 @@ h3 {
 /* link component */
 
 .link .link-fylo {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: var(--color-accent-two);
   text-decoration: none;
 }
@@ -119,8 +119,36 @@ h3 {
   display: grid;
 }
 @media screen and (min-width: 768px) {
-  .grid--1x2 {
+  .grid .grid--1x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Text component */
+.text--description {
+  color: var(--color-primary-one);
+}
+.text--description .text--heading {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.text--description .text--body {
+  font-size: 1.4rem;
+}
+.text--description .text--heading,
+.text--description .text--body {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .text--description .text--heading {
+    font-size: 1.6rem;
+  }
+  .text--description .text--body {
+    font-size: 1.3rem;
+  }
+  .text--description .text--heading,
+  .text--description .text--body {
+    text-align: left;
   }
 }
