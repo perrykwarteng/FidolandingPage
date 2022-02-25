@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+  --color-primary-one: hsl(243, 87%, 12%);
+  --color-primary-two: hsl(238, 22%, 44%);
+  --color-accent-one: hsl(224, 93%, 58%);
+  --color-accent-two: hsl(170, 45%, 43%);
+  --color-neutral-one: hsl(240, 75%, 98%);
+  --color-neutral-two: hsl(0, 0%, 75%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* Buttom component */
+.btn {
+  padding: 1rem 5rem;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background: hsl(224, 93%, 58%);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: hsl(224, 60%, 57%);
+  color: #fff;
+}
+.btn--secondary {
+  background: hsl(224, 90%, 67%);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background: hsl(225, 39%, 58%);
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
