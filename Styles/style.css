@@ -130,11 +130,11 @@ h3 {
   color: var(--color-primary-one);
 }
 .text--description .text--heading {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 .text--description .text--body {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .text--description .text--heading,
 .text--description .text--body {
@@ -142,13 +142,45 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .text--description .text--heading {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .text--description .text--body {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .text--description .text--heading,
   .text--description .text--body {
     text-align: left;
   }
+}
+/* box shadow */
+.boxshadow {
+  box-shadow: 0 0 10px 3px rgb(223, 220, 220);
+}
+/* Testimonial component */
+.testimonial {
+  width: 28rem;
+  height: 18rem;
+  border-radius: 0.7rem;
+  padding: 2.5rem;
+}
+.testimonial .testimonial--text {
+  color: var(--color-primary-one);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.testimonial .testimonial--id {
+  color: var(--color-primary-one);
+  display: flex;
+}
+.testimonial--id .testimonial--image {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1.6rem;
+  border-radius: 50%;
+}
+.testimonial--id .testimonial--id-text {
+  margin: 0.7rem 2rem;
+}
+.testimonial .testimonial--id-textposition {
+  font-size: 1.2rem;
 }
