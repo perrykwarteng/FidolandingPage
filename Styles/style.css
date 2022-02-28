@@ -33,7 +33,9 @@ h3 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
-
+a {
+  text-decoration: none;
+}
 /* Buttom component */
 .btn {
   width: 30rem;
@@ -233,5 +235,56 @@ h3 {
   .callout .group--input-btn .btn {
     margin-top: 1.2rem;
     margin-left: 0;
+  }
+}
+/* List */
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+  color: var(--color-primary-one);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    font-size: 2rem;
+  }
+}
+/* Nav component */
+.nav-bar {
+  width: 100%;
+  height: 10%;
+  transition: all 0.2s ease;
+}
+.nav-bar .nav-element {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar .nav-logo {
+  width: 15rem;
+}
+.nav-bar .nav-logo,
+.nav-bar .nav-list .list {
+  padding: 2rem;
+}
+.nav-bar .list {
+  display: flex;
+}
+
+.list .list-item {
+  margin: 0.3rem 3rem 0 0;
+}
+.list .list-item:hover {
+  color: var(--color-primary-two);
+}
+@media screen and (min-width: 768px) {
+  .nav-bar .nav-logo {
+    width: 20rem;
+  }
+  .nav-bar .nav-logo,
+  .nav-bar .nav-list .list {
+    padding: 2.5rem;
+  }
+  .list .list-item {
+    margin: 0.3rem 4rem 0 0;
   }
 }
