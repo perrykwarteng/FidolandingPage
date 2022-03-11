@@ -94,15 +94,6 @@ a {
 .group--input-btn .btn {
   margin-top: 1.5rem;
 }
-@media screen and (min-width: 768px) {
-  .group--input-btn {
-    display: flex;
-  }
-  .group--input-btn .btn {
-    margin-top: 0;
-    margin-left: 2rem;
-  }
-}
 
 /* link component */
 
@@ -125,8 +116,10 @@ a {
   display: grid;
 }
 @media screen and (min-width: 768px) {
-  .grid .grid--1x2 {
+  .grid {
     display: grid;
+  }
+  .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -166,7 +159,7 @@ a {
 /* Testimonial component */
 .testimonial {
   width: 28rem;
-  height: 18rem;
+  height: 23rem;
   border-radius: 0.7rem;
   padding: 2.5rem;
 }
@@ -174,6 +167,9 @@ a {
   color: var(--color-primary-one);
   font-weight: 400;
   font-size: 1.3rem;
+}
+.testimonial .testimonial--id {
+  margin-top: 1rem;
 }
 .testimonial .testimonial--id {
   color: var(--color-primary-one);
@@ -186,7 +182,7 @@ a {
   border-radius: 50%;
 }
 .testimonial--id .testimonial--id-text {
-  margin: 0.7rem 2rem;
+  margin: 2.5rem 2rem;
 }
 .testimonial .testimonial--id-textposition {
   font-size: 1.2rem;
@@ -198,7 +194,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0 4rem;
 }
 .callout .text--description {
   color: #fff;
@@ -354,5 +350,82 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+.hero {
+  height: 100vh;
+  padding: 4rem;
+  margin-bottom: 18rem;
+}
+.hero .hero-image {
+  width: 400px;
+  margin-top: 3rem;
+}
+.hero .hero-text .group--input-btn {
+  margin-top: 3rem;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 3rem 0 0 4rem;
+    margin-bottom: 0;
+  }
+  .hero .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-image {
+    margin-left: 6rem;
+  }
+  .hero-text {
+    order: -1;
+  }
+  .hero-text .group--input-btn {
+    display: flex;
+    flex-direction: row;
+  }
+  .group--input-btn .btn {
+    padding: 1.4rem 0;
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+
+.section-two {
+  padding: 0 4rem;
+  margin-bottom: 3rem;
+}
+.section-image-two {
+  width: 400px;
+  margin-left: 6rem;
+}
+.section-text {
+  margin-top: 4rem;
+}
+.section-text .text--description .text--heading {
+  text-align: center;
+}
+.section-two .section-text .text--body {
+  text-align: left;
+}
+.text--body .text-two {
+  margin-top: 3rem;
+}
+
+.section-two .link-testimonial,
+.section-two .testimonial {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section-two {
+    display: flex;
+  }
+  .section-two .section-text {
+    order: -1;
   }
 }
